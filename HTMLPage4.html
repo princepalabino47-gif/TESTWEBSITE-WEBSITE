@@ -6,9 +6,44 @@
    * {
       font-family: "crimson pro", "sans-serif";
    }
+
+@media screen and (max-width: 900px) {
+
+  :root {
+--font-size-s: 1rem;
+--font-size-n: 1.3rem;
+--font-size-m: 1.5rem;
+--font-size-1: 1.8rem;
+  }
+
+  .navbar .nav-menu {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: var(--cream-color);
+
+  }
+
+  .navbar .nav-menu .nav-link {
+    color: var(--dark-color);
+    display: block;
+    margin-top: 17px;
+    font-size: var(--font-size-l);
+  }
+
+  
+    
+  
+
+  
 .main-section {
   min-height: 100vh;
   background-color: var(--ocean-color);
+
+
   
 }
 

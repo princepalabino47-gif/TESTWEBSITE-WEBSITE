@@ -8,6 +8,7 @@
    } 
 
 .navbar :where(#menu-close-button, #menu-open-button) {
+  display: block;
   font-size: var(--font-size-1);
 }
 
@@ -19,6 +20,11 @@
   
 .navbar #menu-open-button {
   color: var(--white-color);
+
+}
+
+.navbar :where(#menu-close-button, #menu-open-button) {
+  display: none;
 
 }
   

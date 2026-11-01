@@ -132,11 +132,7 @@ header .navbar {
 .navbar .nav-menu .nav-link:hover{
   color: var(--medium-gray-color);
   background: var(--white-color);
-}
 
-.navbar :where(#menu-close-button, #menu-open-button) {
-  visibility: hidden;
-}
   
 .navbar .nav-menu .nav-link {
   color: var(--white-color);
@@ -150,7 +146,6 @@ header .navbar {
 --font-size-xxl: 1.8rem;
 }
   .navbar :where(#menu-close-button, #menu-open-button) {
-    display: block;
     font-size: var(--font-size-1);
 }
   .navbar #menu-close-button {
@@ -165,7 +160,7 @@ header .navbar {
   .navbar .nav-menu {
     display: block;
     position: fixed;
-    left: 0;
+    left: -300;
     top: 0;
     width: 300px;
     height: 100%;

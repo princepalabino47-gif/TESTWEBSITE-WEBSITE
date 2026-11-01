@@ -139,6 +139,14 @@ header .navbar {
 }
 
 @media screen and (max-width: 900px) {
+
+:root{
+--font-size-m: 1rem;
+--font-size-1: 1.3rem;
+--font-size-xl: 1.5rem;
+--font-size-xxl: 1.8rem;
+}
+ 
 .navbar .nav-menu {
     display: block;
     position: fixed;
@@ -151,9 +159,14 @@ header .navbar {
     align-items: center;
     padding-top: 100px;
     background: var(--cream-color);
-)
+}
 
-  
+.navbar .nav-menu .nav-link {
+    color: var(--dark-color);
+    display: block;
+    margin-top: 17px;
+    font-size: var(--font-size-m);
+  }
   
 </style>
 <head>

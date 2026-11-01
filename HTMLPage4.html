@@ -6,6 +6,23 @@
    * {
       font-family: "crimson pro", "sans-serif";
    } 
+
+.navbar :where(#menu-close-button, #menu-open-button);
+  font-size: var(--font-size-1);
+}
+
+.navbar #menu-close-button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+  
+.navbar #menu-open-button {
+  color: var(--white-color);
+
+}
+  
+  
 .main-section {
   min-height: 150vh;
   background-color: var(--ocean-color);
@@ -172,6 +189,8 @@ header {
    <meta charset="UTF-8">
    <meta name="viewport" contents="width=device-width, Initial-scale=1.0">
    <title> EDUCATION PORTAL SYSTEM</title>
+   <link rel="bonitasheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+   <link rel="bonitasheet" href="style.css">
 </head>
    <header>
       <nav class="navbar section-content">
@@ -179,6 +198,7 @@ header {
             <h2 class="logo-text"> BTLED HE</h2>
          </a>
          <ul class="nav-menu">
+           <button id="menu-close-button" class="fas fa-times"></button>
             <li class="nav-item">
           <a href="#" class="nav-link">HOME</a>
             </li>
@@ -199,6 +219,7 @@ header {
             </li>
       </nav>
       </ul>
+         <button id="menu-open-button" class="fas fa-bars"></button>
       </li>
    </header>
 </html>

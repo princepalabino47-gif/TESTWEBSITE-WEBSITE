@@ -144,8 +144,13 @@ header {
   background: var(--white-color);
 }
 .navbar :where (#menu-close-button, #menu-open-button) {
-  display: (none);
+  display: none;
 }
+
+.navbar :where (#menu-close-button) {
+  display: none;
+}
+  
 .navbar .nav-menu .nav-link {
   color: var(--white-color);
 }
